@@ -1,0 +1,700 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Martel Sans', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url("Assets/Images/Bg.jpg");
+    height: 644px;
+    background-size: max(1200px, 100vw);
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.main .box {
+    height: 644px;
+    width: 100%;
+    opacity: 0.60;
+    position: absolute;
+    top: 0;
+    background-color: black;
+    /* border: 2px solid red; */
+}
+
+nav {
+    max-width: 60vw;
+    margin: auto;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+nav img {
+    color: red;
+    width: 114px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.heading {
+    height: cals(100%-62px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap: 23px;
+    padding: 126px 30px;
+}
+
+.heading>:nth-child(1) {
+    font-weight: bolder;
+    font-size: 48px;
+    text-align: center;
+}
+
+.heading>:nth-child(2) {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+}
+
+.heading> :nth-child(3) {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+
+.seperation {
+    height: 7px;
+    background-color: rgba(128, 128, 128, 0.379);
+    position: relative;
+    z-index: 30;
+}
+
+.btn {
+    padding: 3px 8px;
+    font-weight: 400;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.184);
+    border: 1px solid rgba(255, 255, 255, 0.604);
+    cursor: pointer;
+}
+
+.btn-red {
+    background-color: red;
+    color: white;
+    padding: 3px 24px;
+    font-size: 20px;
+    border-radius: 4px;
+    font-weight: 500;
+}
+.btn-red-sm {
+    background-color: red;
+    color: white;
+}
+.heading-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.main input {
+    padding: 7px 101px 8px 14px;
+    color: white;
+    font-weight: 300;
+    font-size: 12px;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 0, 0.7);
+    border: 1px solid rgba(200, 199, 199, 0.438);
+}
+
+
+.first{
+    display: flex;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+.secImg{
+    position: relative;
+}
+.secImg img{
+    width: 555px;
+    position: relative;
+    z-index: 10;
+}
+.secImg video{
+  position: absolute;
+  top: 51px;
+  right: 0;
+  width: 555px;
+}
+section.first>div {
+    display: flex;
+    flex-direction: column;
+    padding: 34px 0;
+}
+
+section.first > div :nth-child(1){
+    font-size: 48px;
+    font-weight: bolder;
+}
+section.first > div :nth-child(2){
+    font-size: 24px;
+}
+.faq h2 {
+    text-align: center;
+    font-size: 48px;
+}
+
+.faq {
+    background: black;
+    color: white;
+    padding: 34px;
+}
+
+.faqbox:hover {
+    background-color: #414141;
+    color: white;
+}
+
+.faqbox svg {
+    filter: invert(1);
+}
+
+.faqbox {
+    transition: all 1s ease-out;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #2d2d2d;
+    padding: 24px;
+    max-width: 60vw;
+    margin: 34px auto;
+    cursor: pointer;
+}
+.faq-content{
+    display: none;
+}
+.faq-content.show-content {
+    transition: all 1s ease-out;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #2d2d2d;
+    padding: 24px;
+    max-width: 60vw;
+    margin: 34px auto;
+    cursor: pointer;
+
+}
+.membership-text{
+    font-weight: 400;
+    font-size: 20px;
+    justify-content: center;
+    text-align: center;
+}
+.heading-buttons input{
+    padding: 7px 101px 8px 14px;
+    color: white;
+    font-weight: 300;
+    font-size: 12px;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 0, 0.7);
+    border: 1px solid rgba(200, 199, 199, 0.438);
+}
+.Ready{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+footer {
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+    padding: 60px;
+}
+
+footer .questions {
+    padding: 34px 0;
+}
+
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+}
+/* Add this style for the rotation effect */
+.faqbox svg.rotate-icon {
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Add this style for the actual rotation */
+.faqbox svg.rotate-icon.rotate {
+    transform: rotate(45deg);
+}
+
+
+
+
+@media screen and (max-width: 1300px) {
+
+    nav{
+        max-width: 90vw;
+    }
+
+    .first {
+        flex-wrap: wrap;
+    }
+
+    /* .secImg img {
+        width: 305px;
+    }
+
+    .secImg video {
+        width: 305px;
+    } */
+    .secImg img,
+    .secImg video {
+        width: 100%;
+    }
+    .heading> :nth-child(1) {
+        font-size: 32px;
+    }
+
+    .heading> :nth-child(2) {
+        font-size: 18px;
+    }
+
+    .heading> :nth-child(3) {
+        font-size: 18px;
+    }
+
+    .heading-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .faq h2 {
+        text-align: center;
+        font-size: 32px;
+    }
+
+    footer {
+        max-width: 90vw;
+        padding: 75px 0;
+    }
+
+    .footer-item{
+        align-items: center;
+    }
+   
+}
+
+
+
+@media screen and (max-width<1300px) {
+
+   
+
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+}
+
+
+.footer a {
+    font-size: 14px;
+    color: white;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+@media screen and (max-width: 768px) {
+    .footer {
+        grid-template-columns: 1fr;
+    }
+}
+@media screen and (max-width: 400px) {
+    .main {
+        height: auto;
+        background-size: cover;
+    }
+
+    .main .box {
+        height: auto;
+    }
+
+    nav img {
+        width: 80px;
+    }
+
+    .heading > :nth-child(1) {
+        font-size: 24px;
+    }
+
+    .heading > :nth-child(2),
+    .heading > :nth-child(3) {
+        font-size: 16px;
+    }
+
+    .btn {
+        padding: 3px 6px;
+        font-size: 14px;
+    }
+
+    .btn-red {
+        padding: 3px 18px;
+        font-size: 16px;
+    }
+
+    .heading-buttons input {
+        padding: 5px 10px;
+        font-size: 10px;
+    }
+
+    section.first>div :nth-child(1) {
+        font-size: 32px;
+    }
+
+    section.first>div :nth-child(2) {
+        font-size: 16px;
+    }
+
+    .faq h2 {
+        font-size: 32px;
+    }
+
+    .faqbox {
+        font-size: 18px;
+        padding: 16px;
+    }
+
+    .faq-content,
+    .faq-content.show-content {
+        font-size: 18px;
+        padding: 16px;
+    }
+
+    .membership-text {
+        font-size: 14px;
+    }
+
+    .Ready {
+        font-size: 24px;
+    }
+
+    footer {
+        padding: 40px;
+    }
+
+    footer .questions {
+        padding: 20px 0;
+    }
+
+    .footer a {
+        font-size: 12px;
+    }
+
+    .footer-item {
+        gap: 12px;
+    }
+}
+@media only screen 
+    and (min-device-width: 414px) 
+    and (max-device-width: 896px) 
+    and (-webkit-min-device-pixel-ratio: 2) {
+
+    .main {
+        height: auto;
+        background-size: cover;
+    }
+
+    .main .box {
+        height: auto;
+    }
+
+    nav img {
+        width: 80px;
+    }
+
+    .heading > :nth-child(1) {
+        font-size: 24px;
+    }
+
+    .heading > :nth-child(2),
+    .heading > :nth-child(3) {
+        font-size: 16px;
+    }
+
+    .btn {
+        padding: 3px 6px;
+        font-size: 14px;
+    }
+
+    .btn-red {
+        padding: 3px 18px;
+        font-size: 16px;
+    }
+
+    .heading-buttons input {
+        padding: 5px 10px;
+        font-size: 10px;
+    }
+
+    section.first>div :nth-child(1) {
+        font-size: 32px;
+    }
+
+    section.first>div :nth-child(2) {
+        font-size: 16px;
+    }
+
+    .faq h2 {
+        font-size: 32px;
+    }
+
+    .faqbox {
+        font-size: 18px;
+        padding: 16px;
+    }
+
+    .faq-content,
+    .faq-content.show-content {
+        font-size: 18px;
+        padding: 16px;
+    }
+
+    .membership-text {
+        font-size: 14px;
+    }
+
+    .Ready {
+        font-size: 24px;
+    }
+
+    footer {
+        padding: 40px;
+    }
+
+    footer .questions {
+        padding: 20px 0;
+    }
+
+    .footer a {
+        font-size: 12px;
+    }
+
+    .footer-item {
+        gap: 12px;
+    }
+}
+@media only screen 
+    and (min-device-width: 412px) 
+    and (max-device-width: 915px) 
+    and (-webkit-min-device-pixel-ratio: 2) {
+
+    .main {
+        height: auto;
+        background-size: cover;
+    }
+
+    .main .box {
+        height: auto;
+    }
+
+    nav img {
+        width: 80px;
+    }
+
+    .heading > :nth-child(1) {
+        font-size: 24px;
+    }
+
+    .heading > :nth-child(2),
+    .heading > :nth-child(3) {
+        font-size: 16px;
+    }
+
+    .btn {
+        padding: 3px 6px;
+        font-size: 14px;
+    }
+
+    .btn-red {
+        padding: 3px 18px;
+        font-size: 16px;
+    }
+
+    .heading-buttons input {
+        padding: 5px 10px;
+        font-size: 10px;
+    }
+
+    section.first>div :nth-child(1) {
+        font-size: 32px;
+    }
+
+    section.first>div :nth-child(2) {
+        font-size: 16px;
+    }
+
+    .faq h2 {
+        font-size: 32px;
+    }
+
+    .faqbox {
+        font-size: 18px;
+        padding: 16px;
+    }
+
+    .faq-content,
+    .faq-content.show-content {
+        font-size: 18px;
+        padding: 16px;
+    }
+
+    .membership-text {
+        font-size: 14px;
+    }
+
+    .Ready {
+        font-size: 24px;
+    }
+
+    footer {
+        padding: 40px;
+    }
+
+    footer .questions {
+        padding: 20px 0;
+    }
+
+    .footer a {
+        font-size: 12px;
+    }
+
+    .footer-item {
+        gap: 12px;
+    }
+}
+@media only screen 
+    and (min-device-width: 1024px) 
+    and (max-device-width: 1366px) 
+    and (-webkit-min-device-pixel-ratio: 2) {
+
+    .main {
+        height: auto;
+        background-size: cover;
+    }
+
+    .main .box {
+        height: auto;
+    }
+
+    nav img {
+        width: 120px;
+    }
+
+    .heading > :nth-child(1) {
+        font-size: 48px;
+    }
+
+    .heading > :nth-child(2),
+    .heading > :nth-child(3) {
+        font-size: 28px;
+    }
+
+    .btn {
+        padding: 5px 12px;
+        font-size: 20px;
+    }
+
+    .btn-red {
+        padding: 5px 30px;
+        font-size: 24px;
+    }
+
+    .heading-buttons input {
+        padding: 10px 18px;
+        font-size: 16px;
+    }
+
+    section.first>div :nth-child(1) {
+        font-size: 48px;
+    }
+
+    section.first>div :nth-child(2) {
+        font-size: 28px;
+    }
+
+    .faq h2 {
+        font-size: 48px;
+    }
+
+    .faqbox {
+        font-size: 28px;
+        padding: 24px;
+    }
+
+    .faq-content,
+    .faq-content.show-content {
+        font-size: 28px;
+        padding: 24px;
+    }
+
+    .membership-text {
+        font-size: 24px;
+    }
+
+    .Ready {
+        font-size: 40px;
+    }
+
+    footer {
+        padding: 80px;
+    }
+
+    footer .questions {
+        padding: 40px 0;
+    }
+
+    .footer a {
+        font-size: 20px;
+    }
+
+    .footer-item {
+        gap: 24px;
+    }
+}
+
